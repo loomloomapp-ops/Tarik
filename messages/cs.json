@@ -1,0 +1,479 @@
+{
+  "metadata": {
+    "title": "TARIK Invest s.r.o. — Profesionální elektroinstalace po celé ČR",
+    "description": "Silnoproud, slaboproud a realizace elektroinstalací na klíč pro rezidenční, komerční a průmyslové stavby. Škálovatelné týmy, jasná komunikace a odpovědnost za termín i kvalitu po celé České republice.",
+    "ogAlt": "TARIK Invest s.r.o. — elektroinstalace pro velké projekty"
+  },
+  "locale": {
+    "switchTo": "Přepnout jazyk",
+    "cs": "CS",
+    "uk": "UK",
+    "csFull": "Čeština",
+    "ukFull": "Ukrajinština"
+  },
+  "nav": {
+    "services": "Služby",
+    "process": "Jak pracujeme",
+    "projects": "Reference",
+    "advantages": "Proč my",
+    "contact": "Kontakt",
+    "careers": "Kariéra",
+    "faq": "Časté dotazy",
+    "cta": "Konzultovat projekt",
+    "menu": "Menu",
+    "close": "Zavřít",
+    "callUs": "Zavolat",
+    "writeUs": "Napsat"
+  },
+  "hero": {
+    "badge": "Elektromontážní práce · Česká republika",
+    "h1": "Profesionální elektroinstalace\npro velké projekty\npo celé České republice",
+    "subtitle": "Silnoproud, slaboproud a realizace na klíč pro rezidenční, komerční a průmyslové stavby.\nSpolehlivý partner se škálovatelnými týmy, jasnou komunikací a odpovědností za termín i kvalitu.",
+    "ctaPrimary": "Konzultovat projekt",
+    "ctaSecondary": "Služby",
+    "credibility": "TARIK Invest s.r.o. · IČO 19728484 · Praha",
+    "imageAlt": "Technické zázemí velké stavby — rozvaděče a kabelové trasy",
+    "trust": [
+      "Oficiální s.r.o. v ČR",
+      "Záruka na práce",
+      "Po celé ČR",
+      "Velké projekty"
+    ]
+  },
+  "trust": {
+    "marquee": [
+      "NN instalace",
+      "Rozvaděče",
+      "Kabelové trasy",
+      "EPS",
+      "EZS",
+      "CCTV",
+      "MaR",
+      "Osvětlení",
+      "Fotovoltaika",
+      "Datové sítě",
+      "Hromosvody",
+      "Smart home"
+    ]
+  },
+  "services": {
+    "eyebrow": "Co realizujeme",
+    "title": "Komplexní elektroinstalace pod jednou střechou",
+    "lead": "Od silových rozvodů přes slaboproudé systémy až po realizaci na klíč a technický audit.\nCelý objekt předáte jednomu odpovědnému partnerovi.",
+    "cta": "Poptat",
+    "directionsTitle": "Směry",
+    "items": [
+      {
+        "key": "silnoproud",
+        "title": "Silnoproud",
+        "tagline": "Silové elektroinstalace",
+        "intro": "Realizace komplexních elektroinstalací pro byty, bytové komplexy, komerční objekty, administrativní budovy, průmyslové a výrobní provozy i skladové prostory.",
+        "points": [
+          "Kompletní elektroinstalace",
+          "Montáž kabelových tras",
+          "Montáž elektrorozvoden",
+          "Hlavní a podlažní rozvaděče",
+          "Montáž osvětlení",
+          "Nouzové a únikové osvětlení",
+          "Zásuvkové okruhy",
+          "Připojení technologií",
+          "Rekonstrukce a modernizace",
+          "Elektro přípojky",
+          "Příprava k revizím",
+          "Dokončení a předání staveb"
+        ],
+        "directions": [
+          "NN instalace",
+          "Bytové elektroinstalace",
+          "Komerční elektroinstalace",
+          "Průmyslové elektroinstalace",
+          "Rozvaděče",
+          "Kabelové trasy",
+          "Osvětlení",
+          "Nouzové osvětlení",
+          "Hromosvody",
+          "Uzemnění",
+          "Elektro přípojky",
+          "Dobíjecí stanice",
+          "Fotovoltaické přípravy"
+        ]
+      },
+      {
+        "key": "slaboproud",
+        "title": "Slaboproud",
+        "tagline": "Slaboproudé systémy",
+        "intro": "Moderní slaboproudá řešení pro rezidenční, komerční a průmyslové objekty — od strukturované kabeláže po automatizaci budov.",
+        "points": [
+          "Strukturovaná kabeláž",
+          "Internet / LAN sítě",
+          "WiFi infrastruktura",
+          "CCTV a kamerové systémy",
+          "Domovní telefony a videotelefony",
+          "Přístupové systémy",
+          "Zabezpečovací systémy",
+          "EPS, EZS, MaR",
+          "Smart home a automatizace budov",
+          "TV / SAT rozvody",
+          "Serverovny",
+          "Optické sítě"
+        ],
+        "directions": [
+          "EPS — elektrická požární signalizace",
+          "EZS — elektrická zabezpečovací signalizace",
+          "CCTV systémy",
+          "Kamerové systémy",
+          "Přístupové systémy",
+          "Datové rozvody",
+          "Optické sítě",
+          "MaR — měření a regulace",
+          "Smart technologie",
+          "Automatizace budov",
+          "Strukturovaná kabeláž"
+        ]
+      },
+      {
+        "key": "naklic",
+        "title": "Realizace na klíč",
+        "tagline": "Projekty na klíč",
+        "intro": "Kompletní realizace elektroinstalačních projektů od konzultace a plánování přes montáž, koordinaci a kontrolu kvality až po revize, dokumentaci a předání.",
+        "points": [
+          "Projektová příprava",
+          "Technické poradenství",
+          "Příprava rozpočtu",
+          "Realizace elektroinstalace",
+          "Koordinace týmů",
+          "Zajištění pracovníků",
+          "Kontrola kvality",
+          "Revize",
+          "Dokumentace",
+          "Předání objektu"
+        ],
+        "directions": [
+          "Termíny",
+          "Koordinace",
+          "Škálovatelné týmy",
+          "Rychlá komunikace",
+          "Odpovědnost",
+          "Kvalita"
+        ]
+      },
+      {
+        "key": "revize",
+        "title": "Revize a audit",
+        "tagline": "Revize a technický audit",
+        "intro": "Posouzení stavu elektroinstalace a objektu před rekonstrukcí nebo zahájením projektu — s jasnými doporučeními a odhadem nákladů.",
+        "points": [
+          "Audit elektroinstalace",
+          "Technická prohlídka objektu",
+          "Konzultace",
+          "Odhad nákladů",
+          "Identifikace rizik",
+          "Doporučení před rekonstrukcí"
+        ],
+        "directions": [
+          "Posouzení stavu",
+          "Bezpečnost",
+          "Podklady pro rozpočet",
+          "Plán prací"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Jak pracujeme",
+    "title": "Řízený proces bez chaosu na stavbě",
+    "lead": "Každý krok řeší to, co u dodavatelů nejčastěji selhává — komunikaci, termíny, kvalitu a odpovědnost.",
+    "steps": [
+      {
+        "title": "Konzultace",
+        "desc": "Projdeme objekt, rozsah a očekávání. Zjistíme, co projekt skutečně potřebuje.",
+        "solves": "Konec nejasného zadání"
+      },
+      {
+        "title": "Návrh a rozpočet",
+        "desc": "Připravíme technické řešení a transparentní rozpočet bez skrytých položek.",
+        "solves": "Žádné překročení rozpočtu"
+      },
+      {
+        "title": "Koordinace týmu",
+        "desc": "Sestavíme tým podle rozsahu a navážeme se na ostatní profese na stavbě.",
+        "solves": "Dostatek kvalifikovaných lidí"
+      },
+      {
+        "title": "Realizace",
+        "desc": "Montáž podle harmonogramu, s průběžnými foto a video reporty.",
+        "solves": "Práce v termínu"
+      },
+      {
+        "title": "Kontrola kvality a revize",
+        "desc": "Kontrolujeme provedení a připravujeme objekt k revizím.",
+        "solves": "Kvalitní a bezpečné provedení"
+      },
+      {
+        "title": "Předání s dokumentací",
+        "desc": "Předáme hotový objekt s kompletní dokumentací a zárukou.",
+        "solves": "Jasná odpovědnost za výsledek"
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Reference",
+    "title": "Partner pro velké a odpovědné projekty",
+    "lead": "Ukázky typů realizací, na které se zaměřujeme napříč Českou republikou.",
+    "labels": {
+      "type": "Typ",
+      "location": "Lokalita",
+      "category": "Kategorie",
+      "scope": "Rozsah prací"
+    },
+    "items": [
+      {
+        "title": "Bytový komplex",
+        "type": "Rezidenční výstavba",
+        "location": "Praha",
+        "category": "Silnoproud · Slaboproud",
+        "scope": "Kompletní elektroinstalace, kabelové trasy, rozvaděče, osvětlení a slaboproudé systémy.",
+        "description": "Realizace silových a slaboproudých rozvodů pro novostavbu bytového komplexu s důrazem na termíny a koordinaci profesí.",
+        "imageAlt": "Technické zázemí novostavby bytového komplexu s kabelovými trasami a rozvaděči"
+      },
+      {
+        "title": "Administrativní budova",
+        "type": "Komerční objekt",
+        "location": "Brno",
+        "category": "Slaboproud · Datové sítě",
+        "scope": "Strukturovaná kabeláž, serverovna, přístupové systémy, CCTV a LAN.",
+        "description": "Slaboproudá infrastruktura administrativní budovy — datové rozvody, serverovna a bezpečnostní systémy s čistým vedením kabeláže.",
+        "imageAlt": "Serverovna komerční budovy se strukturovanou kabeláží a datovými rozvody"
+      },
+      {
+        "title": "Výrobní hala",
+        "type": "Průmyslový objekt",
+        "location": "Plzeň",
+        "category": "Průmyslový silnoproud",
+        "scope": "Kabelové trasy, rozvaděče, průmyslové osvětlení a připojení technologií.",
+        "description": "Velkoplošná průmyslová elektroinstalace výrobní haly včetně rozvaděčů a připojení výrobních technologií.",
+        "imageAlt": "Průmyslová hala s rozvaděči, kabelovými trasami a montáží osvětlení"
+      },
+      {
+        "title": "Logistické centrum",
+        "type": "Sklad / logistika",
+        "location": "Ostrava",
+        "category": "Silnoproud · Nouzové osvětlení",
+        "scope": "Technické osvětlení, nouzové osvětlení, kabelové trasy a rozvaděče.",
+        "description": "Elektroinstalace logistického centra s vysokými stropy — technické a nouzové osvětlení a rozvody ve velkém měřítku.",
+        "imageAlt": "Velký logistický sklad s vysokými stropy a technickým osvětlením"
+      }
+    ]
+  },
+  "advantages": {
+    "eyebrow": "Proč my",
+    "title": "Spolehlivý partner, ne náhodná parta",
+    "lead": "Pracujeme jako profesionální dodavatel pro vážné rezidenční, komerční a průmyslové projekty.",
+    "highlights": [
+      {
+        "title": "Oficiální firma se zárukou",
+        "desc": "Registrovaná s.r.o. v ČR s odpovědností za výsledek a zárukou na všechny dokončené práce."
+      },
+      {
+        "title": "Škálovatelné týmy",
+        "desc": "Zajistíme kvalifikované pracovníky podle rozsahu — od menších objektů po velké stavby."
+      },
+      {
+        "title": "Transparentní rozpočet",
+        "desc": "Jasná cena, foto a video reporty z průběhu prací. Bez skrytých položek a překvapení."
+      },
+      {
+        "title": "Moderní přístup a AI nástroje",
+        "desc": "Efektivní plánování, koordinace a komunikace s využitím moderních a AI nástrojů."
+      }
+    ],
+    "points": [
+      "Rychlá komunikace",
+      "Dodržení termínů",
+      "Zkušenosti s velkými projekty",
+      "Individuální přístup",
+      "Spolehlivý tým",
+      "Po celé ČR"
+    ]
+  },
+  "leadForm": {
+    "eyebrow": "Kontakt",
+    "title": "Proberme váš projekt",
+    "lead": "Pošlete poptávku — po úvodní konzultaci připravíme individuální nabídku a odhad termínu."
+  },
+  "testimonials": {
+    "eyebrow": "Reference klientů",
+    "title": "Co o spolupráci říkají",
+    "lead": "Zkušenosti partnerů z realizovaných projektů.",
+    "items": [
+      {
+        "quote": "Komunikace byla věcná a termíny seděly. Koordinace s ostatními profesemi na stavbě fungovala bez zdržení.",
+        "name": "Martin Dvořák",
+        "role": "Projektový manažer, stavební společnost"
+      },
+      {
+        "quote": "Oceňuji transparentní rozpočet a průběžné reporty. U projektu této velikosti je to pro mě klíčové.",
+        "name": "Petr Novák",
+        "role": "Investor"
+      },
+      {
+        "quote": "Spolehlivý subdodavatel pro silnoproud i slaboproud. Předání proběhlo s kompletní dokumentací.",
+        "name": "Lukáš Havel",
+        "role": "Generální dodavatel"
+      },
+      {
+        "quote": "Slaboproudé systémy v budově fungují bez problémů. Servis a reakce na dotazy jsou rychlé.",
+        "name": "Jana Marková",
+        "role": "Správkyně komerční nemovitosti"
+      }
+    ]
+  },
+  "careers": {
+    "eyebrow": "Kariéra",
+    "title": "Hledáme kvalifikované elektrikáře pro projekty po celé ČR",
+    "lead": "Hledáme spolehlivé specialisty na silnoproud a slaboproud. Dlouhodobá spolupráce, velké projekty a včasné platby.",
+    "cta": "Přidat se do týmu",
+    "success": {
+      "title": "Děkujeme za zájem.",
+      "desc": "Vaše údaje jsme přijali. Ozveme se vám ohledně dalších kroků.",
+      "again": "Odeslat další přihlášku"
+    }
+  },
+  "faq": {
+    "eyebrow": "Časté dotazy",
+    "title": "Na co se klienti ptají",
+    "lead": "Pokud nenajdete odpověď, zavolejte nebo pošlete poptávku.",
+    "items": [
+      {
+        "q": "Kolik stojí elektroinstalace?",
+        "a": "Cena závisí na typu objektu, složitosti a rozsahu prací. Po konzultaci připravíme individuální rozpočet."
+      },
+      {
+        "q": "Pracujete po celé České republice?",
+        "a": "Ano, realizujeme projekty po celém území České republiky."
+      },
+      {
+        "q": "Poskytujete záruku?",
+        "a": "Ano, na všechny dokončené práce poskytujeme záruku."
+      },
+      {
+        "q": "Spolupracujete s developery a velkými společnostmi?",
+        "a": "Ano, je to jeden z našich hlavních směrů."
+      },
+      {
+        "q": "Lze objednat jen revizi / technický audit?",
+        "a": "Ano, provádíme samostatné revize, audity a technické kontroly."
+      },
+      {
+        "q": "Jak rychle můžete začít?",
+        "a": "Záleží na rozsahu projektu a dostupnosti týmu. Po první konzultaci dokážeme odhadnout termín."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Máte projekt? Proberme ho.",
+    "desc": "Pošlete poptávku nebo zavolejte. Po úvodní konzultaci připravíme nabídku a odhad termínu.",
+    "cta": "Konzultovat projekt",
+    "phoneLabel": "Zavolat"
+  },
+  "footer": {
+    "tagline": "Profesionální elektroinstalace po celé České republice.",
+    "navTitle": "Navigace",
+    "contactTitle": "Kontakt",
+    "companyTitle": "Společnost",
+    "legalTitle": "Dokumenty",
+    "privacy": "Ochrana osobních údajů",
+    "rights": "Všechna práva vyhrazena.",
+    "addressTitle": "Adresa",
+    "socialTitle": "Sítě"
+  },
+  "popup": {
+    "title": "Proberme váš projekt",
+    "desc": "Nechte kontakt — ozveme se a navrhneme další kroky.",
+    "open": "Otevřít poptávkový formulář",
+    "close": "Zavřít formulář"
+  },
+  "widget": {
+    "label": "Konzultovat projekt",
+    "mobileCta": "Konzultovat projekt"
+  },
+  "form": {
+    "name": "Jméno",
+    "namePh": "Vaše jméno",
+    "phone": "Telefon",
+    "phonePh": "+420 ...",
+    "email": "E-mail",
+    "emailPh": "vas@email.cz",
+    "city": "Město",
+    "cityPh": "Např. Praha",
+    "service": "Typ služby",
+    "servicePh": "Vyberte službu",
+    "message": "Popis projektu",
+    "messagePh": "Stručně popište objekt, rozsah a termín.",
+    "file": "Příloha",
+    "fileHint": "Foto, výkres nebo dokumentace.",
+    "fileChoose": "Vybrat soubor",
+    "fileNone": "Nevybrán žádný soubor",
+    "specialization": "Specializace",
+    "specializationPh": "Např. elektromontér NN",
+    "experience": "Praxe",
+    "experiencePh": "Např. 5 let",
+    "documents": "Živnost / dokumenty",
+    "documentsPh": "ŽL / OSVČ / zaměstnanec",
+    "note": "Krátká poznámka",
+    "notePh": "Napište pár slov o sobě.",
+    "consent": "Souhlasím se zpracováním osobních údajů.",
+    "consentLink": "Více o ochraně osobních údajů",
+    "optional": "nepovinné",
+    "submit": "Odeslat poptávku",
+    "sending": "Odesílání…",
+    "serviceOptions": [
+      "Silnoproud",
+      "Slaboproud",
+      "Na klíč",
+      "Revize / audit",
+      "Jiné"
+    ],
+    "errors": {
+      "required": "Vyplňte prosím toto pole.",
+      "name": "Zadejte prosím jméno.",
+      "email": "Zadejte platný e-mail.",
+      "phone": "Zadejte platné telefonní číslo.",
+      "consent": "Potvrďte prosím souhlas.",
+      "fileSize": "Soubor je příliš velký (max. 25 MB).",
+      "generic": "Něco se nepovedlo. Zkuste to prosím znovu nebo zavolejte na +420 774 285 158."
+    },
+    "success": {
+      "title": "Děkujeme, máme to.",
+      "desc": "Ozveme se vám co nejdříve. Pokud spěcháte, zavolejte na +420 774 285 158.",
+      "again": "Odeslat další poptávku"
+    }
+  },
+  "privacy": {
+    "title": "Ochrana osobních údajů",
+    "draftNote": "Pracovní návrh dokumentu. Před zveřejněním nechte zkontrolovat právníkem (GDPR / zákon č. 110/2019 Sb.).",
+    "back": "Zpět na úvod",
+    "sections": [
+      {
+        "h": "Správce údajů",
+        "p": "Správcem osobních údajů je TARIK Invest s.r.o., Chudenická 1059/30, 102 00 Praha 10 – Hostivař, IČO 19728484."
+      },
+      {
+        "h": "Jaké údaje zpracováváme",
+        "p": "Údaje, které vyplníte ve formulářích na webu: jméno, telefon, e-mail, město, popis projektu a případné přílohy. U kariérního formuláře také specializaci, praxi a dokumenty."
+      },
+      {
+        "h": "Účel zpracování",
+        "p": "Údaje zpracováváme za účelem zpracování poptávky, přípravy nabídky, komunikace a případného náboru. Bez vašeho souhlasu je nepoužíváme k jiným účelům."
+      },
+      {
+        "h": "Doba uchování",
+        "p": "Údaje uchováváme po dobu nezbytnou k vyřízení poptávky a po dobu vyžadovanou právními předpisy."
+      },
+      {
+        "h": "Vaše práva",
+        "p": "Máte právo na přístup k údajům, opravu, výmaz, omezení zpracování a podání námitky. Žádost zašlete na tarikinvest009@gmail.com."
+      }
+    ]
+  }
+}

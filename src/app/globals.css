@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  /* Averint warm palette (1:1) — soft-black sections, cream/beige light sections.
+     Single accent kept as our electric-blue per brief. The "navy-*" / "graphite-*"
+     / "mist-*" token names are reused so components map straight onto warm values. */
+  --color-navy-950: #141313; /* deepest soft-black (hero, footer) */
+  --color-navy-900: #191818; /* soft-black */
+  --color-navy-800: #201f1f;
+  --color-navy-700: #2d2c2c;
+
+  --color-electric-400: #4d82ff;
+  --color-electric-500: #2d6bff;
+  --color-electric-600: #1d54e6;
+
+  --color-graphite-900: #2d2c2c; /* charcoal — headings on light */
+  --color-graphite-700: #46443f; /* warm dark gray */
+  --color-graphite-500: #5d5c5b; /* ash gray — body text */
+
+  --color-mist-50: #f7f7f2; /* warm-white page surface */
+  --color-mist-100: #eeece6; /* soft-beige alt sections */
+  --color-mist-200: #e4e1d8; /* warm hairline */
+  --color-mist-300: #cdcbc4; /* warm border */
+
+  --font-sans: var(--font-inter-tight), "Segoe UI", system-ui, sans-serif;
+  --font-mono: var(--font-inter-tight), "Segoe UI", system-ui, sans-serif;
+
+  --shadow-soft: 0 30px 60px -30px rgba(25, 24, 24, 0.35);
+  --shadow-card: 0 22px 48px -28px rgba(25, 24, 24, 0.22);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #f7f7f2;
+    color: var(--color-graphite-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-electric-500);
+    color: #ffffff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-electric-500);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Template typography: medium weight, tight negative tracking */
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Subtle technical grid used on soft-black sections */
+.bg-grid-navy {
+  background-image:
+    linear-gradient(to right, rgba(77, 130, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(77, 130, 255, 0.05) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Subtle technical grid for light sections */
+.bg-grid-light {
+  background-image:
+    linear-gradient(to right, rgba(45, 44, 44, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(45, 44, 44, 0.04) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Radial accent glow */
+.glow-electric {
+  background: radial-gradient(
+    circle at center,
+    rgba(45, 107, 255, 0.32),
+    transparent 70%
+  );
+}
+
+/* Hero overlay — ported from the template's dual-gradient wash (warm-black) */
+.hero-overlay {
+  background-image:
+    linear-gradient(
+      100deg,
+      #191818,
+      rgba(25, 24, 24, 0.9) 13%,
+      rgba(25, 24, 24, 0) 34%,
+      rgba(25, 24, 24, 0.1) 67%,
+      rgba(25, 24, 24, 0.8) 87%,
+      #191818
+    ),
+    linear-gradient(rgba(20, 19, 19, 0.7), rgba(25, 24, 24, 0) 18%);
+}
+
+/* Continuous keyword marquee */
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 12%,
+    #000 88%,
+    transparent
+  );
+}
