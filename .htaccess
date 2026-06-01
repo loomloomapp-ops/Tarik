@@ -12,11 +12,6 @@ RewriteRule ^api/career/?$ api/submit.php [L]
 # Protect the fallback submission log
 RewriteRule ^api/_log(/.*)?$ - [F]
 
-# SPA-ish: serve existing files/dirs as-is; otherwise fall back to homepage.
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
-
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpeg "access plus 30 days"

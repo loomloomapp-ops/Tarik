@@ -25,8 +25,7 @@ $kind = strpos($uri, 'career') !== false ? 'career' : 'lead';
 $raw = file_get_contents('php://input');
 $data = json_decode($raw, true);
 if (!is_array($data)) {
-    // Fallback: classic form post.
-    $data = $_POST;
+    $data = $_POST; // classic form fallback
 }
 
 // Honeypot — pretend success, do nothing.
@@ -46,7 +45,6 @@ if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     out(false, 422);
 }
 
-// Build the message body from whichever fields are present.
 $order = $kind === 'career'
     ? ['name', 'phone', 'specialization', 'experience', 'city', 'documents', 'note', 'message']
     : ['name', 'phone', 'email', 'city', 'service', 'message', 'fileName'];
