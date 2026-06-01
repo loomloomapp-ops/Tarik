@@ -1,21 +1,19 @@
-# TARIK Invest — deploy (static PHP/HTML)
+# TARIK Invest — static deploy (Next.js production build)
 
-Production-ready static site generated from the Next.js source on `main`.
-The repository **root is the web root** (`public_html`).
+This branch is the **real Next.js production build** exported as flat files for
+Apache shared hosting (Hostinger, no Node). The repository root is the web root
+(`public_html`).
 
-## Structure
-- `index.php` — Czech homepage (default)
-- `uk/index.php` — Ukrainian homepage
-- `privacy.php`, `uk/privacy.php` — privacy pages
-- `submit.php` — lead + careers form handler (PHP `mail()` + local log fallback)
-- `lib/` — render functions + content bundles (`cs.json`, `uk.json`)
-- `assets/` — css, js, images, hero video
-- `uploads/` — form submission log (not web-accessible)
+- `index.html` — Czech homepage (served at `/`)
+- `uk/index.html` — Ukrainian homepage (served at `/uk`)
+- `ochrana-osobnich-udaju/`, `uk/ochrana-osobnich-udaju/` — privacy pages
+- `_next/static/` — hashed JS, CSS and self-hosted fonts (immutable, long-cache)
+- `images/`, `hero.mp4`, `logo*.png` — media at site root
+- `api/submit.php` — lead + careers form handler (PHP mail + local log)
+- `nav-fix.js` — forces real navigation for cross-page links + language switch
+  (the Next client router cannot fetch RSC on a static host)
+- `.htaccess` — form rewrites, caching, gzip
 
-## Hostinger deployment
-1. hPanel → Zaawansowane → GIT → set **branch = `deploy`**, path = empty (public_html).
-2. `public_html` must be empty before deploy.
-3. Requires PHP 7.4+ (no Composer / Node needed).
-
-Form submissions are emailed to `tarikinvest009@gmail.com` and also appended to
-`uploads/submissions.log` as a fallback.
+Regenerated from `main` via `next build` with `images.unoptimized = true`.
+Requires PHP 7.x+ only. To refresh after content/design changes on `main`,
+rebuild and re-export this branch.
