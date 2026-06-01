@@ -152,3 +152,158 @@
     transparent
   );
 }
+
+/* ==========================================================================
+   Brand preloader — "energize sweep"
+   Tunables (override these custom properties to restyle): background, accent,
+   logo size, loop speed, exit (curtain-lift) duration.
+   ========================================================================== */
+.preloader {
+  --preloader-bg: #141313;
+  --preloader-accent: #2d6bff;
+  --preloader-logo: clamp(150px, 26vw, 248px);
+  --preloader-speed: 1.7s;
+  --preloader-exit: 0.85s;
+
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  background-color: var(--preloader-bg);
+  background-image: radial-gradient(
+    120% 80% at 50% 40%,
+    rgba(45, 107, 255, 0.1),
+    transparent 60%
+  );
+  will-change: transform;
+}
+
+/* Lock scroll only while the intro is on screen */
+.preloader-active {
+  overflow: hidden;
+}
+
+.preloader.is-exiting {
+  animation: preloader-lift var(--preloader-exit) cubic-bezier(0.76, 0, 0.24, 1)
+    forwards;
+}
+@keyframes preloader-lift {
+  to {
+    transform: translateY(-101%);
+  }
+}
+
+.preloader__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(18px, 3vw, 26px);
+  animation: preloader-enter 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.preloader.is-exiting .preloader__inner {
+  animation: preloader-fade 0.4s ease forwards;
+}
+@keyframes preloader-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
+    filter: blur(7px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+@keyframes preloader-fade {
+  to {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+}
+
+.preloader__logo {
+  position: relative;
+  width: var(--preloader-logo);
+  line-height: 0;
+}
+.preloader__logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Electric "charge" sweeping across the logo silhouette (logo used as a mask) */
+.preloader__sweep {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  -webkit-mask: url(/logo-ondark.png) center / contain no-repeat;
+  mask: url(/logo-ondark.png) center / contain no-repeat;
+  background-image: linear-gradient(
+    100deg,
+    transparent 38%,
+    var(--preloader-accent) 50%,
+    transparent 62%
+  );
+  background-repeat: no-repeat;
+  background-size: 220% 100%;
+  background-position: 165% 0;
+  animation: preloader-sweep var(--preloader-speed) cubic-bezier(0.6, 0, 0.2, 1)
+    infinite;
+}
+@keyframes preloader-sweep {
+  0% {
+    background-position: 165% 0;
+  }
+  55%,
+  100% {
+    background-position: -65% 0;
+  }
+}
+
+/* Hairline trace underneath — a charged pulse, not a 0–100% bar */
+.preloader__line {
+  position: relative;
+  height: 2px;
+  width: clamp(120px, 22vw, 220px);
+  border-radius: 2px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+}
+.preloader__line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--preloader-accent),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: preloader-trace var(--preloader-speed) cubic-bezier(0.6, 0, 0.2, 1)
+    infinite;
+}
+@keyframes preloader-trace {
+  0% {
+    transform: translateX(-100%);
+  }
+  55%,
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader__inner,
+  .preloader__sweep,
+  .preloader__line::after {
+    animation: none;
+  }
+  .preloader__sweep {
+    opacity: 0;
+  }
+}

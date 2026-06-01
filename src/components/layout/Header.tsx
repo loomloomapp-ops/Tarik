@@ -8,7 +8,6 @@ import {
   AnimatePresence,
 } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { Logo } from "./Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileMenu } from "./MobileMenu";
@@ -61,9 +60,9 @@ export function Header() {
 
               <nav className="hidden items-center gap-1 lg:flex">
                 {navItems.map((item) => (
-                  <Link
+                  <a
                     key={item.id}
-                    href={`/#${item.id}`}
+                    href={`#${item.id}`}
                     className={`rounded-full px-3.5 py-2 text-base font-medium transition-colors ${
                       solid
                         ? "text-graphite-700 hover:bg-mist-100 hover:text-graphite-900"
@@ -71,7 +70,7 @@ export function Header() {
                     }`}
                   >
                     {t(item.key)}
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </div>
@@ -82,7 +81,7 @@ export function Header() {
               </div>
 
               <Button
-                href={`/#${CONTACT_ANCHOR}`}
+                href={`#${CONTACT_ANCHOR}`}
                 variant={solid ? "primary" : "light"}
                 className="hidden sm:inline-flex"
               >

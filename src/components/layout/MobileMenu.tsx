@@ -10,7 +10,6 @@ import {
   EnvelopeSimple,
 } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
 import { navItems, CONTACT_ANCHOR } from "./nav";
 import { company } from "@/content/company";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -61,13 +60,13 @@ export function MobileMenu({
                     ease: [0.16, 1, 0.3, 1],
                   }}
                 >
-                  <Link
-                    href={`/#${item.id}`}
+                  <a
+                    href={`#${item.id}`}
                     onClick={onClose}
                     className="block border-b border-white/10 py-4 text-2xl font-medium text-white transition-colors hover:text-electric-400"
                   >
                     {t(item.key)}
-                  </Link>
+                  </a>
                 </motion.div>
               ))}
             </nav>
@@ -110,7 +109,7 @@ export function MobileMenu({
               </div>
 
               <Button
-                href={`/#${CONTACT_ANCHOR}`}
+                href={`#${CONTACT_ANCHOR}`}
                 onClick={onClose}
                 size="lg"
                 className="w-full justify-between"

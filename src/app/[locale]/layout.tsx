@@ -19,6 +19,7 @@ const interTight = Inter_Tight({
 import { SITE_URL, OG_IMAGE } from "@/lib/seo";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Preloader } from "@/components/layout/Preloader";
 import { PopupProvider } from "@/components/conversion/PopupProvider";
 import { LeadPopup } from "@/components/conversion/LeadPopup";
 import { StickyMobileCta } from "@/components/conversion/StickyMobileCta";
@@ -86,6 +87,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={interTight.variable}>
       <body className="bg-mist-50">
+        <Preloader />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <PopupProvider>
             <a

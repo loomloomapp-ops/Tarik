@@ -75,12 +75,12 @@ export function Footer({ locale }: { locale: string }) {
             <ul className="mt-5 space-y-3 text-sm">
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <Link
-                    href={`/#${item.id}`}
+                  <a
+                    href={`#${item.id}`}
                     className="text-mist-200 transition-colors hover:text-white"
                   >
                     {tn(item.key)}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
