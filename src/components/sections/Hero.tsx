@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
 import { Container } from "@/components/ui/Container";
@@ -12,20 +13,16 @@ export function Hero() {
 
   return (
     <section className="relative isolate overflow-hidden bg-navy-950 text-white">
-      {/* Full-screen background video with the template's dual-gradient wash.
-          public/hero.{mp4,webm} is a placeholder clip — swap for real footage. */}
+      {/* Full-screen background image with the template's dual-gradient wash. */}
       <div className="absolute inset-0 -z-10">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden="true"
-          className="h-full w-full object-cover"
-        >
-          <source src="/hero.mp4" type="video/mp4" />
-        </video>
+        <Image
+          src="/hero.jpg"
+          alt={t("imageAlt")}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
         <div className="hero-overlay absolute inset-0" />
         <div className="absolute inset-0 bg-grid-navy opacity-40" />
         <div className="absolute -left-40 top-1/4 h-[36rem] w-[36rem] glow-electric opacity-50" />
@@ -40,7 +37,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={0.06}>
-            <h1 className="mt-8 text-[clamp(2.3rem,4.8vw,4.25rem)] font-medium leading-[1.06] tracking-[-0.04em] md:whitespace-nowrap">
+            <h1 className="mt-8 max-w-[58rem] text-[clamp(2.3rem,4.8vw,4.25rem)] font-medium leading-[1.06] tracking-[-0.04em]">
               {t("h1")
                 .split("\n")
                 .map((line, i) => (

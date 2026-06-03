@@ -27,7 +27,7 @@
   },
   "hero": {
     "badge": "Elektromontážní práce · Česká republika",
-    "h1": "Profesionální elektroinstalace\npro velké projekty\npo celé České republice",
+    "h1": "Profesionální elektroinstalace\npro velké projekty po celé České republice",
     "subtitle": "Silnoproud, slaboproud a realizace na klíč pro rezidenční, komerční a průmyslové stavby.\nSpolehlivý partner se škálovatelnými týmy, jasnou komunikací a odpovědností za termín i kvalitu.",
     "ctaPrimary": "Konzultovat projekt",
     "ctaSecondary": "Služby",
@@ -325,6 +325,21 @@
         "quote": "Slaboproudé systémy v budově fungují bez problémů. Servis a reakce na dotazy jsou rychlé.",
         "name": "Jana Marková",
         "role": "Správkyně komerční nemovitosti"
+      },
+      {
+        "quote": "Práce byla dobře zorganizovaná, materiál i nářadí připravené dopředu. Na stavbě jsem se mohl soustředit na montáž bez zbytečných prostojů.",
+        "name": "Tomáš Kořínek",
+        "role": "Vedoucí montér"
+      },
+      {
+        "quote": "Rozpočet i harmonogram odpovídaly skutečnosti. Reporty jsem dostával pravidelně a měl jsem přehled, v jaké fázi projekt je.",
+        "name": "Radek Beneš",
+        "role": "Zástupce investora"
+      },
+      {
+        "quote": "Při výstavbě bytového komplexu drželi kvalitu i v náročném tempu. Předání jednotlivých etap proběhlo přesně podle plánu.",
+        "name": "Kateřina Šťastná",
+        "role": "Zástupkyně developera"
       }
     ]
   },
